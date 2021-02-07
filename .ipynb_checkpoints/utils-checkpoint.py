@@ -16,7 +16,6 @@ import cv2
 
 
 def lintolog(image, max_val=1.0, min_val=-1.0):
-    image = image.numpy()
     LIN_MAX = 1.0
     LOG_MAX = np.log10(LIN_MAX + 1)
     image, dtype = to_float(image)
